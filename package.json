@@ -4,7 +4,7 @@
   "description": "my notes about learing cpp",
   "author": "carberry chai",
   "scripts": {
-    "dev": "vuepress-vite dev docs",
+    "dev": "vuepress-vite dev docs -p 3000",
     "build": "vuepress-vite build docs"
   },
   "license": "MIT",

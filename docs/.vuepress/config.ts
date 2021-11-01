@@ -8,11 +8,32 @@ export default defineUserConfig<DefaultThemeOptions>({
 
   themeConfig: {
     logo: null,
+    sidebarDepth: 1,
     navbar: [
       {
         text: 'Data Structure',
         link: '/data-structure/',
       },
     ],
+    sidebar: {
+      '/data-structure/': [
+        {
+          text: '数据结构',
+          children: ['/data-structure/time-complexity.md'],
+        },
+        {
+          text: '算法',
+          children: [],
+        },
+      ],
+      '/': [
+        {
+          text: 'C++基础',
+          children: [],
+        },
+      ],
+    },
   },
 })
+
+console.log(`server runing at http://localhost:3000`)
