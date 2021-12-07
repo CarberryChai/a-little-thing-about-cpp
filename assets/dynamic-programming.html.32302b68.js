@@ -1,0 +1,1 @@
+const a={key:"v-4230a474",path:"/data-structure/dynamic-programming.html",title:"\u52A8\u6001\u89C4\u5212",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"data-structure/dynamic-programming.md",git:{updatedTime:1638883614e3,contributors:[{name:"Carberry",email:"CarberryChai@gmail.com",commits:1}]}};export{a as data};

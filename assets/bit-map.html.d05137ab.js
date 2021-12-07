@@ -1,0 +1,1 @@
+import{c as e,o as t,a,b as o}from"./app.de733250.js";import{_ as r}from"./plugin-vue_export-helper.5a098b48.js";const s={},c={id:"bitmap",tabindex:"-1"},_=a("a",{class:"header-anchor",href:"#bitmap","aria-hidden":"true"},"#",-1),i=o(" Bitmap"),n=[_,i];function d(p,h){return t(),e("h1",c,n)}var l=r(s,[["render",d]]);export{l as default};

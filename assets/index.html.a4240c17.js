@@ -1,0 +1,1 @@
+const t={key:"v-8845e9f4",path:"/data-structure/",title:"Data Structure",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"data-structure/README.md",git:{updatedTime:1635594048e3,contributors:[{name:"Carberry",email:"CarberryChai@gmail.com",commits:1}]}};export{t as data};

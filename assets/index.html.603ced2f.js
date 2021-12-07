@@ -1,0 +1,1 @@
+import{c as e,o as t,a,b as r}from"./app.de733250.js";import{_ as s}from"./plugin-vue_export-helper.5a098b48.js";const o={},c={id:"data-structure",tabindex:"-1"},_=a("a",{class:"header-anchor",href:"#data-structure","aria-hidden":"true"},"#",-1),d=r(" Data Structure"),n=[_,d];function i(h,u){return t(),e("h1",c,n)}var l=s(o,[["render",i]]);export{l as default};
