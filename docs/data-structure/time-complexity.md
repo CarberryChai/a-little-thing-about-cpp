@@ -36,3 +36,86 @@ C++等高级语言的基本指令，均等效于常数条RAM的基本指令；�
 
 > T(n) = 1 + 2 + …… + n  =  n(n+1)/2 = O(n^2)
 
+### 幂方级数：比幂次高一阶
+
+> T(n) = 1^2 + 2^2 + 3^2 + .... + n^2 = n(n+1)(2n+1)/6 = O(n^3)
+>
+> T(n) = 1^3 + 2^3 + 3^3 + .... + n^3 = n^2(n+1)^2/4 = O(n^4)
+>
+> T(n) = 1^4 + 2^4 + 3^4 + .... + n^4 = n(n+1)(2n+1)(3n^2+3n-1)/30 = O(n^5)
+
+### 几何级数(a > 1)：与末项同阶
+
+>  T(n) = 1 + 2 + 4 + ... + 2^n = 2^(n+1) -1 = O(2^(n+1)) = O(2^n)
+
+### 收敛级数
+
+> 1/1/2 + 1/2/3 + 1/3/4 + ... + 1/(n-1)/n = 1 - 1/n = O(1)
+>
+> 1 + 1/2^2 + .... + 1/n^2  < 1 + 1/2^2 + .... = π^2/6 = O(1)
+>
+> 1/3 + 1/7 + 1/8 + 1/15 + 1/24 + 1/26 + 1/31 + 1/35 ... = 1 = O(1)
+
+### 几何分布
+
+> (1- λ) *[1 + 2λ + 3λ^2 + 4λ^3 + ...] = 1/(1 - λ) = O(1), 0<λ<1 // 例如抛硬币
+
+### 调和级数
+
+> 1 + 1/2 + 1/3 + ... + 1/n = O(logn)
+
+### 对数级数
+
+> log1 + log2 + log3 + ... logn = log(n!) = O(nlogn)
+
+## 循环 vs 级数
+
+1、算数级数：T(n) = n + n + ... + n = n *n = O(n^2)
+
+```c++
+for (int i = 0; i < n; i++)
+  for (int j = 0; j < n; j++)
+    O1Operation(i, j);
+```
+
+上述双循环的时间复杂度就等于下图矩形的面积
+
+<img src="https://cdn.jsdelivr.net/gh/CarberryChai/oss@master/image/LiRDXw-yDwZBl.png" style="zoom:50%;" />
+
+2、算数级数：
+
+<img src="https://cdn.jsdelivr.net/gh/CarberryChai/oss@master/image/Hw6tsH-lJPgzS.png" style="zoom:50%;" />
+
+```c++
+for (int i = 0; i < n; i++)
+  for (int j = 0; j < i; j++)
+    O1Operation(i, j);
+```
+
+上述双循环的时间复杂度就等于下图三角形的面积
+
+<img src="https://cdn.jsdelivr.net/gh/CarberryChai/oss@master/image/TPXKr9-LytEwL.png" style="zoom:50%;" />
+
+3、
+
+```c++
+for (int i = 0; i < n; i++)
+  for (int j = 0; j < i; j += 2013)
+    O1Operation(i, j);
+```
+
+上述双循环的时间复杂度就等于下图三角形的面积
+
+<img src="https://cdn.jsdelivr.net/gh/CarberryChai/oss@master/image/sRYlwc-gXbdzx.png" style="zoom:50%;" />
+
+4、几何级数：
+
+<img src="https://cdn.jsdelivr.net/gh/CarberryChai/oss@master/image/0VqoWw-dTqVqm.png" style="zoom: 33%;" />
+
+```c++
+for (int i = 0; i < n; i <<=1)
+  for (int j = 0; j < i; j++)
+    O1Operation(i, j);
+```
+
+<img src="https://cdn.jsdelivr.net/gh/CarberryChai/oss@master/image/IeUj2Q-obOqQg.png" style="zoom:25%;" />

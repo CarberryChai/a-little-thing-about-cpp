@@ -8,7 +8,9 @@ export default defineUserConfig<DefaultThemeOptions>({
 
   themeConfig: {
     logo: null,
+    repo: 'https://github.com/CarberryChai/a-little-thing-about-cpp',
     sidebarDepth: 1,
+    editLink: false,
     navbar: [
       {
         text: 'Data Structure',
@@ -19,11 +21,13 @@ export default defineUserConfig<DefaultThemeOptions>({
       '/data-structure/': [
         {
           text: '数据结构',
-          children: ['/data-structure/time-complexity.md'],
-        },
-        {
-          text: '算法',
-          children: [],
+          children: [
+            '/data-structure/time-complexity.md',
+            '/data-structure/divide-and-conquer.md',
+            '/data-structure/dynamic-programming.md',
+            '/data-structure/bit-map.md',
+            '/data-structure/list.md',
+          ],
         },
       ],
       '/': [
@@ -36,4 +40,4 @@ export default defineUserConfig<DefaultThemeOptions>({
   },
 })
 
-console.log(`server runing at http://localhost:3000`)
+console.log(`server runing at http://localhost:5500`)

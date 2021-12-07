@@ -4,11 +4,12 @@
   "description": "my notes about learing cpp",
   "author": "carberry chai",
   "scripts": {
-    "dev": "vuepress-vite dev docs -p 3000",
+    "dev": "vuepress-vite dev docs -p 5500",
     "build": "vuepress-vite build docs"
   },
   "license": "MIT",
   "devDependencies": {
     "vuepress-vite": "^2.0.0-beta.26"
-  }
+  },
+  "dependencies": {}
 }
